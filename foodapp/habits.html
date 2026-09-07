@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="exercise.html" class="nav-link">Exercise</a>
+        <a href="habits.html" class="nav-link active">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+      Dashboard
+    </a>
+    <a href="add-food.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Add Food
+    </a>
+    <a href="logs.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      Logs
+    </a>
+    <a href="reports.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      Reports
+    </a>
+    <a href="calendar.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Calendar
+    </a>
+    <a href="exercise.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+      Exercise
+    </a>
+    <a href="habits.html" class="mobile-nav-link active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>
+      Habits
+    </a>
+    <a href="meal-plan.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Meal Plan
+    </a>
+    <a href="grocery.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>
+      Grocery
+    </a>
+    <a href="achievements.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+      Achievements
+    </a>
+    <a href="ai-coach.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>
+      AI Coach
+    </a>
+    <a href="profile.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+    <a href="settings.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>
+      Settings
+    </a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+      Logout
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container">
+      <div class="mb-6">
+        <h1>Habit Tracker</h1>
+        <p class="text-secondary">Track your daily wellness habits</p>
+      </div>
+
+      <!-- Habit Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="habitsContainer">
+        <!-- Water Intake -->
+        <div class="card habit-card">
+          <div class="habit-icon water">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+            </svg>
+          </div>
+          <div class="habit-info">
+            <div class="habit-name">Water Intake</div>
+            <div class="habit-target">Goal: <span id="waterTarget">8</span> glasses</div>
+            <div class="habit-progress">
+              <div class="progress-bar">
+                <div class="progress-bar-fill" id="waterProgress" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="habit-controls">
+            <button class="habit-btn" onclick="updateHabit('water', -1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"/>
+              </svg>
+            </button>
+            <span class="habit-value" id="waterValue">0</span>
+            <button class="habit-btn" onclick="updateHabit('water', 1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Steps -->
+        <div class="card habit-card">
+          <div class="habit-icon steps">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
+            </svg>
+          </div>
+          <div class="habit-info">
+            <div class="habit-name">Daily Steps</div>
+            <div class="habit-target">Goal: <span id="stepsTarget">10000</span> steps</div>
+            <div class="habit-progress">
+              <div class="progress-bar">
+                <div class="progress-bar-fill" id="stepsProgress" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="habit-controls">
+            <button class="habit-btn" onclick="updateHabit('steps', -500)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"/>
+              </svg>
+            </button>
+            <span class="habit-value" id="stepsValue">0</span>
+            <button class="habit-btn" onclick="updateHabit('steps', 500)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sleep -->
+        <div class="card habit-card">
+          <div class="habit-icon sleep">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+          </div>
+          <div class="habit-info">
+            <div class="habit-name">Sleep Hours</div>
+            <div class="habit-target">Goal: <span id="sleepTarget">8</span> hours</div>
+            <div class="habit-progress">
+              <div class="progress-bar">
+                <div class="progress-bar-fill" id="sleepProgress" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="habit-controls">
+            <button class="habit-btn" onclick="updateHabit('sleep', -0.5)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"/>
+              </svg>
+            </button>
+            <span class="habit-value" id="sleepValue">0</span>
+            <button class="habit-btn" onclick="updateHabit('sleep', 0.5)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Fruits & Vegetables -->
+        <div class="card habit-card">
+          <div class="habit-icon fruits">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22c4.97 0 9-4.03 9-9V7a9 9 0 00-18 0v6c0 4.97 4.03 9 9 9z"/>
+              <path d="M12 7v5"/>
+            </svg>
+          </div>
+          <div class="habit-info">
+            <div class="habit-name">Fruits & Veggies</div>
+            <div class="habit-target">Goal: <span id="fruitsTarget">5</span> servings</div>
+            <div class="habit-progress">
+              <div class="progress-bar">
+                <div class="progress-bar-fill" id="fruitsProgress" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="habit-controls">
+            <button class="habit-btn" onclick="updateHabit('fruits', -1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"/>
+              </svg>
+            </button>
+            <span class="habit-value" id="fruitsValue">0</span>
+            <button class="habit-btn" onclick="updateHabit('fruits', 1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Set Goals Card -->
+      <div class="card mt-6">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Habit Goals</h3>
+            <p class="card-subtitle">Customize your daily targets</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <form id="habitGoalsForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="waterGoal">Water (glasses)</label>
+                <input type="number" id="waterGoal" class="form-input" min="1" max="20" value="8">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="stepsGoalInput">Daily Steps</label>
+                <input type="number" id="stepsGoalInput" class="form-input" min="1000" max="50000" step="500" value="10000">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="sleepGoal">Sleep (hours)</label>
+                <input type="number" id="sleepGoal" class="form-input" min="4" max="12" step="0.5" value="8">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fruitsGoal">Fruits & Veggies</label>
+                <input type="number" id="fruitsGoal" class="form-input" min="1" max="15" value="5">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Goals</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Weekly Overview -->
+      <div class="card mt-6">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">This Week's Progress</h3>
+            <p class="card-subtitle">How you've been tracking</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; text-align: center;">
+            <div>
+              <div class="text-xs text-muted mb-2">Mon</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #16a34a); display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Tue</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #16a34a); display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Wed</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #16a34a); display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Thu</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Fri</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: linear-gradient(135deg, #22c55e, #16a34a); display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Sat</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs text-muted mb-2">Sun</div>
+              <div style="width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    function initPage() {
+      loadHabits();
+      
+      document.getElementById('habitGoalsForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        App.HabitManager.setTarget('water', parseInt(document.getElementById('waterGoal').value));
+        App.HabitManager.setTarget('steps', parseInt(document.getElementById('stepsGoalInput').value));
+        App.HabitManager.setTarget('sleep', parseFloat(document.getElementById('sleepGoal').value));
+        App.HabitManager.setTarget('fruits', parseInt(document.getElementById('fruitsGoal').value));
+        
+        loadHabits();
+        App.Toast.success('Goals updated successfully');
+      });
+    }
+
+    function loadHabits() {
+      const habits = App.HabitManager.getAll();
+      
+      // Update displays
+      document.getElementById('waterValue').textContent = habits.water.current;
+      document.getElementById('waterTarget').textContent = habits.water.target;
+      document.getElementById('waterGoal').value = habits.water.target;
+      
+      document.getElementById('stepsValue').textContent = habits.steps.current.toLocaleString();
+      document.getElementById('stepsTarget').textContent = habits.steps.target.toLocaleString();
+      document.getElementById('stepsGoalInput').value = habits.steps.target;
+      
+      document.getElementById('sleepValue').textContent = habits.sleep.current;
+      document.getElementById('sleepTarget').textContent = habits.sleep.target;
+      document.getElementById('sleepGoal').value = habits.sleep.target;
+      
+      document.getElementById('fruitsValue').textContent = habits.fruits.current;
+      document.getElementById('fruitsTarget').textContent = habits.fruits.target;
+      document.getElementById('fruitsGoal').value = habits.fruits.target;
+
+      // Update progress bars
+      updateProgressBar('water', habits.water.current, habits.water.target);
+      updateProgressBar('steps', habits.steps.current, habits.steps.target);
+      updateProgressBar('sleep', habits.sleep.current, habits.sleep.target);
+      updateProgressBar('fruits', habits.fruits.current, habits.fruits.target);
+    }
+
+    function updateProgressBar(type, current, target) {
+      const percentage = Math.min((current / target) * 100, 100);
+      document.getElementById(`${type}Progress`).style.width = `${percentage}%`;
+    }
+
+    function updateHabit(type, amount) {
+      const habits = App.HabitManager.getAll();
+      const newValue = habits[type].current + amount;
+      
+      if (newValue >= 0) {
+        App.HabitManager.update(type, newValue);
+        loadHabits();
+        
+        // Check if goal reached
+        const updated = App.HabitManager.getAll();
+        if (updated[type].current === updated[type].target && amount > 0) {
+          App.Toast.success(`You reached your ${type} goal!`, 'Goal Achieved');
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>

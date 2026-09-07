@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link active">Reports</a>
+        <a href="exercise.html" class="nav-link">Exercise</a>
+        <a href="habits.html" class="nav-link">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+      Dashboard
+    </a>
+    <a href="add-food.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Add Food
+    </a>
+    <a href="logs.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      Logs
+    </a>
+    <a href="reports.html" class="mobile-nav-link active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      Reports
+    </a>
+    <a href="calendar.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Calendar
+    </a>
+    <a href="exercise.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+      Exercise
+    </a>
+    <a href="habits.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>
+      Habits
+    </a>
+    <a href="meal-plan.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Meal Plan
+    </a>
+    <a href="grocery.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>
+      Grocery
+    </a>
+    <a href="achievements.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+      Achievements
+    </a>
+    <a href="ai-coach.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>
+      AI Coach
+    </a>
+    <a href="profile.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+    <a href="settings.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>
+      Settings
+    </a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+      Logout
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container">
+      <div class="mb-6">
+        <h1>Reports & Analytics</h1>
+        <p class="text-secondary">Track your nutrition trends over time</p>
+      </div>
+
+      <!-- Period Selector -->
+      <div class="search-bar" style="justify-content: flex-start;">
+        <button class="btn btn-outline active" data-period="week">Last 7 Days</button>
+        <button class="btn btn-outline" data-period="month">This Month</button>
+        <button class="btn btn-outline" data-period="quarter">Last 3 Months</button>
+        <button class="btn btn-secondary" onclick="exportReport()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Export CSV
+        </button>
+      </div>
+
+      <!-- Summary Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #86efac, #22c55e);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="summary-card-value" id="avgCalories">0</div>
+          <div class="summary-card-label">Avg. Daily Calories</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #93c5fd, #3b82f6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+          </div>
+          <div class="summary-card-value" id="totalEntries">0</div>
+          <div class="summary-card-label">Total Entries</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #c4b5fd, #8b5cf6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="summary-card-value" id="goalDays">0</div>
+          <div class="summary-card-label">Days Met Goal</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="summary-card-value" id="streakDays">0</div>
+          <div class="summary-card-label">Current Streak</div>
+        </div>
+      </div>
+
+      <!-- Charts Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- Calories Trend -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Calories Trend</h3>
+              <p class="card-subtitle">Daily calorie intake over time</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              <canvas id="caloriesChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Macro Distribution -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Macro Distribution</h3>
+              <p class="card-subtitle">Average protein, fat, and carbs</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              <canvas id="macroChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weekly Bar Chart -->
+      <div class="card mb-6">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Weekly Breakdown</h3>
+            <p class="card-subtitle">Calories and macros by day of week</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas id="weeklyChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Categories -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Food Categories</h3>
+            <p class="card-subtitle">Distribution by meal type</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-container chart-container-sm">
+            <canvas id="categoryChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    let caloriesChart, macroChart, weeklyChart, categoryChart;
+    let currentPeriod = 'week';
+
+    function initPage() {
+      setupPeriodButtons();
+      loadData();
+    }
+
+    function setupPeriodButtons() {
+      document.querySelectorAll('[data-period]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('[data-period]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentPeriod = btn.dataset.period;
+          loadData();
+        });
+      });
+    }
+
+    function loadData() {
+      updateSummaryCards();
+      loadCharts();
+    }
+
+    function getPeriodDates() {
+      const end = new Date();
+      const start = new Date();
+      
+      switch (currentPeriod) {
+        case 'week':
+          start.setDate(end.getDate() - 7);
+          break;
+        case 'month':
+          start.setMonth(end.getMonth() - 1);
+          break;
+        case 'quarter':
+          start.setMonth(end.getMonth() - 3);
+          break;
+        default:
+          start.setDate(end.getDate() - 7);
+      }
+      
+      return {
+        start: start.toISOString().split('T')[0],
+        end: end.toISOString().split('T')[0]
+      };
+    }
+
+    function updateSummaryCards() {
+      const dates = getPeriodDates();
+      const foods = App.FoodManager.getByDateRange(dates.start, dates.end);
+      const goals = App.GoalsManager.getAll();
+      const streaks = App.Storage.get('streaks', { current: 0 });
+
+      // Calculate daily totals
+      const dailyTotals = {};
+      foods.forEach(food => {
+        if (!dailyTotals[food.date]) {
+          dailyTotals[food.date] = { calories: 0, protein: 0, fat: 0, carbs: 0 };
+        }
+        dailyTotals[food.date].calories += food.calories || 0;
+        dailyTotals[food.date].protein += food.protein || 0;
+        dailyTotals[food.date].fat += food.fat || 0;
+        dailyTotals[food.date].carbs += food.carbs || 0;
+      });
+
+      const days = Object.keys(dailyTotals).length || 1;
+      const totalCalories = Object.values(dailyTotals).reduce((sum, d) => sum + d.calories, 0);
+      const avgCalories = Math.round(totalCalories / days);
+      
+      // Days met goal
+      const goalDays = Object.values(dailyTotals).filter(d => d.calories <= goals.calories).length;
+
+      document.getElementById('avgCalories').textContent = avgCalories.toLocaleString();
+      document.getElementById('totalEntries').textContent = foods.length;
+      document.getElementById('goalDays').textContent = goalDays;
+      document.getElementById('streakDays').textContent = streaks.current;
+    }
+
+    function loadCharts() {
+      const dates = getPeriodDates();
+      const foods = App.FoodManager.getByDateRange(dates.start, dates.end);
+
+      // Prepare daily data
+      const dailyData = {};
+      const dateLabels = [];
+      
+      // Generate all dates in range
+      let current = new Date(dates.start);
+      const end = new Date(dates.end);
+      
+      while (current <= end) {
+        const dateStr = current.toISOString().split('T')[0];
+        dateLabels.push(dateStr);
+        dailyData[dateStr] = { calories: 0, protein: 0, fat: 0, carbs: 0 };
+        current.setDate(current.getDate() + 1);
+      }
+
+      // Aggregate data
+      foods.forEach(food => {
+        if (dailyData[food.date]) {
+          dailyData[food.date].calories += food.calories || 0;
+          dailyData[food.date].protein += food.protein || 0;
+          dailyData[food.date].fat += food.fat || 0;
+          dailyData[food.date].carbs += food.carbs || 0;
+        }
+      });
+
+      const displayLabels = dateLabels.map(d => {
+        const date = new Date(d);
+        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      });
+
+      const caloriesData = dateLabels.map(d => dailyData[d].calories);
+      const proteinData = dateLabels.map(d => dailyData[d].protein);
+      const fatData = dateLabels.map(d => dailyData[d].fat);
+      const carbsData = dateLabels.map(d => dailyData[d].carbs);
+
+      // Calories Trend Chart
+      const ctx1 = document.getElementById('caloriesChart').getContext('2d');
+      if (caloriesChart) caloriesChart.destroy();
+      
+      caloriesChart = new Chart(ctx1, {
+        type: 'line',
+        data: {
+          labels: displayLabels,
+          datasets: [{
+            label: 'Calories',
+            data: caloriesData,
+            borderColor: '#22c55e',
+            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#22c55e',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: { beginAtZero: true },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+
+      // Macro Distribution (Pie)
+      const totalProtein = proteinData.reduce((a, b) => a + b, 0);
+      const totalFat = fatData.reduce((a, b) => a + b, 0);
+      const totalCarbs = carbsData.reduce((a, b) => a + b, 0);
+
+      const ctx2 = document.getElementById('macroChart').getContext('2d');
+      if (macroChart) macroChart.destroy();
+      
+      macroChart = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+          labels: ['Protein', 'Fat', 'Carbs'],
+          datasets: [{
+            data: [totalProtein, totalFat, totalCarbs],
+            backgroundColor: ['#22c55e', '#f59e0b', '#3b82f6'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '60%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { usePointStyle: true, padding: 20 }
+            }
+          }
+        }
+      });
+
+      // Weekly Breakdown (Bar)
+      const ctx3 = document.getElementById('weeklyChart').getContext('2d');
+      if (weeklyChart) weeklyChart.destroy();
+      
+      weeklyChart = new Chart(ctx3, {
+        type: 'bar',
+        data: {
+          labels: displayLabels,
+          datasets: [
+            {
+              label: 'Protein',
+              data: proteinData,
+              backgroundColor: '#22c55e'
+            },
+            {
+              label: 'Fat',
+              data: fatData,
+              backgroundColor: '#f59e0b'
+            },
+            {
+              label: 'Carbs',
+              data: carbsData,
+              backgroundColor: '#3b82f6'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { stacked: false },
+            y: { beginAtZero: true }
+          }
+        }
+      });
+
+      // Food Categories
+      const categories = { breakfast: 0, lunch: 0, dinner: 0, snack: 0 };
+      foods.forEach(f => {
+        if (categories[f.mealType] !== undefined) {
+          categories[f.mealType]++;
+        } else {
+          categories.snack++;
+        }
+      });
+
+      const ctx4 = document.getElementById('categoryChart').getContext('2d');
+      if (categoryChart) categoryChart.destroy();
+      
+      categoryChart = new Chart(ctx4, {
+        type: 'pie',
+        data: {
+          labels: ['Breakfast', 'Lunch', 'Dinner', 'Snack'],
+          datasets: [{
+            data: [categories.breakfast, categories.lunch, categories.dinner, categories.snack],
+            backgroundColor: ['#f59e0b', '#22c55e', '#3b82f6', '#8b5cf6'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { usePointStyle: true, padding: 20 }
+            }
+          }
+        }
+      });
+    }
+
+    function exportReport() {
+      const dates = getPeriodDates();
+      const foods = App.FoodManager.getByDateRange(dates.start, dates.end);
+      
+      if (foods.length === 0) {
+        App.Toast.warning('No data to export');
+        return;
+      }
+
+      // Create CSV content
+      const headers = ['Date', 'Name', 'Quantity', 'Unit', 'Calories', 'Protein', 'Fat', 'Carbs', 'Sugar', 'Meal Type', 'Notes'];
+      const rows = foods.map(f => [
+        f.date,
+        f.name,
+        f.quantity,
+        f.unit || 'serving',
+        f.calories,
+        f.protein || 0,
+        f.fat || 0,
+        f.carbs || 0,
+        f.sugar || 0,
+        f.mealType || 'snack',
+        f.notes || ''
+      ]);
+
+      const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+      
+      // Download
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `nutritrack-report-${dates.start}-to-${dates.end}.csv`;
+      a.click();
+      window.URL.revokeObjectURL(url);
+      
+      App.Toast.success('Report exported successfully');
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>

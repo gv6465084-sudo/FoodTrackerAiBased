@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="exercise.html" class="nav-link">Exercise</a>
+        <a href="habits.html" class="nav-link">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>Dashboard</a>
+    <a href="add-food.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Food</a>
+    <a href="logs.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>Logs</a>
+    <a href="reports.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Reports</a>
+    <a href="calendar.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Calendar</a>
+    <a href="exercise.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Exercise</a>
+    <a href="habits.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>Habits</a>
+    <a href="meal-plan.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>Meal Plan</a>
+    <a href="grocery.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>Grocery</a>
+    <a href="achievements.html" class="mobile-nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>Achievements</a>
+    <a href="ai-coach.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>AI Coach</a>
+    <a href="profile.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profile</a>
+    <a href="settings.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>Settings</a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container">
+      <div class="mb-6">
+        <h1>Achievements</h1>
+        <p class="text-secondary">Track your milestones and badges</p>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="summary-card-value" id="unlockedCount">0</div>
+          <div class="summary-card-label">Badges Unlocked</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #86efac, #22c55e);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="summary-card-value" id="streakCount">0</div>
+          <div class="summary-card-label">Current Streak</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #c4b5fd, #8b5cf6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
+          </div>
+          <div class="summary-card-value" id="completionRate">0%</div>
+          <div class="summary-card-label">Completion Rate</div>
+        </div>
+      </div>
+
+      <!-- Progress to Next Badge -->
+      <div class="card mb-6">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">Progress to Next Badge</h3>
+            <p class="card-subtitle">Keep going to unlock more achievements</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div style="margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span class="font-medium">7-Day Streak</span>
+              <span class="text-sm text-secondary" id="streakProgress">5/7 days</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar-fill" id="streakBar" style="width: 71%"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span class="font-medium">Hydration Hero</span>
+              <span class="text-sm text-secondary" id="waterProgress">6/7 days</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar-fill" id="waterBar" style="width: 86%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Achievements -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">All Achievements</h3>
+            <p class="card-subtitle">Collect them all!</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="achievement-grid" id="achievementsGrid">
+            <!-- Achievements will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    function initPage() {
+      loadAchievements();
+    }
+
+    function loadAchievements() {
+      const achievements = App.AchievementsManager.getStatus();
+      const unlocked = achievements.filter(a => a.unlocked);
+      
+      document.getElementById('unlockedCount').textContent = unlocked.length;
+      document.getElementById('completionRate').textContent = 
+        Math.round((unlocked.length / achievements.length) * 100) + '%';
+
+      const streaks = App.Storage.get('streaks', { current: 0 });
+      document.getElementById('streakCount').textContent = streaks.current;
+
+      // Update progress bars
+      const streakPercent = Math.min((streaks.current / 7) * 100, 100);
+      document.getElementById('streakProgress').textContent = 
+        `${Math.min(streaks.current, 7)}/7 days`;
+      document.getElementById('streakBar').style.width = `${streakPercent}%`;
+
+      const container = document.getElementById('achievementsGrid');
+      container.innerHTML = achievements.map(achievement => {
+        const iconMap = {
+          utensils: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M3 2h6M3 13v9M21 2v20M8 2v20M14 2v9a4 4 0 004 4h4V2h-4z"/>',
+          flame: '<path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-2.072-2.143-1.072 2.143-1.572 3.572-1.572 5.5a2.5 2.5 0 002.5 2.5h.143c2.643 0 4.786-2.143 4.786-4.786 0-1.214-.5-2.357-1.357-3.214-1.072-2.143-2.072-2.143-2.072-2.143"/><path d="M13.5 14.5A2.5 2.5 0 0016 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-2.072-2.143-1.072 2.143-1.572 3.572-1.572 5.5a2.5 2.5 0 002.5 2.5h.143c2.643 0 4.786-2.143 4.786-4.786 0-1.214-.5-2.357-1.357-3.214-1.072-2.143-2.072-2.143-2.072-2.143"/>',
+          star: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+          crown: '<path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/>',
+          droplet: '<path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>',
+          footprints: '<path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 9 3.8 9 5.5c0 3.11-2 5.66-2 8.68V16"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 15 7.8 15 9.5c0 3.11 2 5.66 2 8.68V20"/><path d="M16 14V9"/><path d="M8 14v-2"/>',
+          heart: '<path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>',
+          dumbbell: '<path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>'
+        };
+
+        const iconSvg = iconMap[achievement.icon] || iconMap.star;
+
+        return `
+          <div class="achievement-card ${achievement.unlocked ? 'unlocked' : ''}">
+            <div class="achievement-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${iconSvg}</svg>
+            </div>
+            <div class="achievement-name">${achievement.name}</div>
+            <div class="achievement-description">${achievement.description}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>

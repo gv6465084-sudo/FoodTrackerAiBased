@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="exercise.html" class="nav-link">Exercise</a>
+        <a href="habits.html" class="nav-link">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link active">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>Dashboard</a>
+    <a href="add-food.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Food</a>
+    <a href="logs.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>Logs</a>
+    <a href="reports.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Reports</a>
+    <a href="calendar.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Calendar</a>
+    <a href="exercise.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Exercise</a>
+    <a href="habits.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>Habits</a>
+    <a href="meal-plan.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>Meal Plan</a>
+    <a href="grocery.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>Grocery</a>
+    <a href="achievements.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>Achievements</a>
+    <a href="ai-coach.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>AI Coach</a>
+    <a href="profile.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profile</a>
+    <a href="settings.html" class="mobile-nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>Settings</a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container container-md">
+      <div class="mb-6">
+        <h1>Settings</h1>
+        <p class="text-secondary">Customize your app experience</p>
+      </div>
+
+      <!-- Appearance -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">Appearance</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Dark Mode</h4>
+                <p class="text-sm text-secondary">Switch between light and dark themes</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="darkModeToggle">
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">Notifications</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Enable Notifications</h4>
+                <p class="text-sm text-secondary">Get reminders for meals and goals</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="notificationsToggle" checked>
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Meal Reminders</h4>
+                <p class="text-sm text-secondary">Remind me to log my meals</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="mealRemindersToggle" checked>
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Goal Reminders</h4>
+                <p class="text-sm text-secondary">Remind me about my daily goals</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="goalRemindersToggle" checked>
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Weekly Report</h4>
+                <p class="text-sm text-secondary">Receive weekly progress summary</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="weeklyReportToggle" checked>
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preferences -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">Preferences</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Sound Effects</h4>
+                <p class="text-sm text-secondary">Play sounds for actions</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="soundEffectsToggle">
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Compact Mode</h4>
+                <p class="text-sm text-secondary">Show more content with less spacing</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-input" id="compactModeToggle">
+                <span class="toggle-label"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Units -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">Units & Measurements</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label class="form-label">Weight Unit</label>
+              <div style="display: flex; gap: 1rem;">
+                <label class="form-check">
+                  <input type="radio" name="weightUnit" value="kg" class="form-check-input" checked>
+                  <span class="form-check-label">Kilograms (kg)</span>
+                </label>
+                <label class="form-check">
+                  <input type="radio" name="weightUnit" value="lbs" class="form-check-input">
+                  <span class="form-check-label">Pounds (lbs)</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Height Unit</label>
+              <div style="display: flex; gap: 1rem;">
+                <label class="form-check">
+                  <input type="radio" name="heightUnit" value="cm" class="form-check-input" checked>
+                  <span class="form-check-label">Centimeters (cm)</span>
+                </label>
+                <label class="form-check">
+                  <input type="radio" name="heightUnit" value="ft" class="form-check-input">
+                  <span class="form-check-label">Feet/Inches</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Management -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">Data Management</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Clear All Data</h4>
+                <p class="text-sm text-secondary">Delete all your tracking data (cannot be undone)</p>
+              </div>
+              <button class="btn btn-danger btn-sm" onclick="clearAllData()">Clear Data</button>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Reset Onboarding</h4>
+                <p class="text-sm text-secondary">Go through the setup process again</p>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="resetOnboarding()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="settings-section">
+        <h3 class="settings-section-title">About</h3>
+        <div class="card">
+          <div class="card-body">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Version</h4>
+                <p class="text-sm text-secondary">NutriTrack v1.0.0</p>
+              </div>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Privacy Policy</h4>
+                <p class="text-sm text-secondary">Read our privacy policy</p>
+              </div>
+              <a href="#" class="btn btn-ghost btn-sm">View</a>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <h4>Terms of Service</h4>
+                <p class="text-sm text-secondary">Read our terms of service</p>
+              </div>
+              <a href="#" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Save Button -->
+      <div class="mt-6" style="text-align: center;">
+        <button class="btn btn-primary btn-lg" onclick="saveSettings()">Save Settings</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    function initPage() {
+      loadSettings();
+
+      // Theme toggle
+      document.getElementById('darkModeToggle').addEventListener('change', function() {
+        if (this.checked) {
+          App.ThemeManager.setTheme('dark');
+        } else {
+          App.ThemeManager.setTheme('light');
+        }
+      });
+    }
+
+    function loadSettings() {
+      const settings = App.Storage.get('settings', {});
+      const currentTheme = App.ThemeManager.getCurrentTheme();
+
+      document.getElementById('darkModeToggle').checked = currentTheme === 'dark';
+      document.getElementById('notificationsToggle').checked = settings.notifications !== false;
+      document.getElementById('mealRemindersToggle').checked = settings.reminders !== false;
+      document.getElementById('goalRemindersToggle').checked = settings.goalReminders !== false;
+      document.getElementById('weeklyReportToggle').checked = settings.weeklyReport !== false;
+      document.getElementById('soundEffectsToggle').checked = settings.soundEffects === true;
+      document.getElementById('compactModeToggle').checked = settings.compactMode === true;
+    }
+
+    function saveSettings() {
+      const settings = {
+        notifications: document.getElementById('notificationsToggle').checked,
+        reminders: document.getElementById('mealRemindersToggle').checked,
+        goalReminders: document.getElementById('goalRemindersToggle').checked,
+        weeklyReport: document.getElementById('weeklyReportToggle').checked,
+        soundEffects: document.getElementById('soundEffectsToggle').checked,
+        compactMode: document.getElementById('compactModeToggle').checked,
+        theme: document.getElementById('darkModeToggle').checked ? 'dark' : 'light'
+      };
+
+      App.Storage.set('settings', settings);
+      App.Toast.success('Settings saved successfully');
+    }
+
+    function clearAllData() {
+      if (confirm('WARNING: This will permanently delete ALL your data including food logs, habits, and achievements. This cannot be undone. Are you sure?')) {
+        if (confirm('Please confirm again that you want to delete ALL data.')) {
+          // Keep user account but clear all tracking data
+          const user = App.UserManager.getCurrentUser();
+          App.Storage.clear();
+          if (user) {
+            App.Storage.set('users', [user]);
+            App.Storage.set('currentUser', user);
+          }
+          App.Toast.success('All data cleared. Redirecting...');
+          setTimeout(() => {
+            window.location.href = 'dashboard.html';
+          }, 1500);
+        }
+      }
+    }
+
+    function resetOnboarding() {
+      if (confirm('This will reset your profile and goals. You will be redirected to the onboarding page. Continue?')) {
+        App.Storage.remove('profile');
+        App.Storage.remove('goals');
+        App.Toast.success('Onboarding reset. Redirecting...');
+        setTimeout(() => {
+          window.location.href = 'onboarding.html';
+        }, 1000);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>

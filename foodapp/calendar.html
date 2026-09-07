@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="exercise.html" class="nav-link">Exercise</a>
+        <a href="habits.html" class="nav-link">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>Dashboard</a>
+    <a href="add-food.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Food</a>
+    <a href="logs.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>Logs</a>
+    <a href="reports.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Reports</a>
+    <a href="calendar.html" class="mobile-nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Calendar</a>
+    <a href="exercise.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Exercise</a>
+    <a href="habits.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>Habits</a>
+    <a href="meal-plan.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>Meal Plan</a>
+    <a href="grocery.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>Grocery</a>
+    <a href="achievements.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>Achievements</a>
+    <a href="ai-coach.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>AI Coach</a>
+    <a href="profile.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profile</a>
+    <a href="settings.html" class="mobile-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>Settings</a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>Logout</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container">
+      <div class="mb-6">
+        <h1>Calendar</h1>
+        <p class="text-secondary">View your tracking history by day</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Calendar -->
+        <div class="lg:col-span-2">
+          <div id="calendarContainer"></div>
+        </div>
+
+        <!-- Selected Day Details -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title" id="selectedDateTitle">Select a Date</h3>
+              <p class="card-subtitle" id="selectedDateSubtitle">Click on a date to view details</p>
+            </div>
+          </div>
+          <div class="card-body" id="dayDetails">
+            <div class="empty-state">
+              <div class="empty-state-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+              </div>
+              <h4 class="empty-state-title">No date selected</h4>
+              <p class="empty-state-description">Click on any date in the calendar to see your food logs, habits, and exercise for that day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #86efac, #22c55e);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+          </div>
+          <div class="summary-card-value" id="monthEntries">0</div>
+          <div class="summary-card-label">Entries This Month</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #93c5fd, #3b82f6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="summary-card-value" id="monthCalories">0</div>
+          <div class="summary-card-label">Avg Daily Calories</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="summary-card-value" id="monthGoals">0</div>
+          <div class="summary-card-label">Days Met Goal</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #c4b5fd, #8b5cf6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div class="summary-card-value" id="loggedDays">0</div>
+          <div class="summary-card-label">Days Logged</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    let calendar;
+
+    function initPage() {
+      // Initialize calendar
+      calendar = new App.Calendar('calendarContainer', onDateSelect);
+      
+      // Load month stats
+      loadMonthStats();
+    }
+
+    function onDateSelect(date) {
+      const selected = new Date(date);
+      document.getElementById('selectedDateTitle').textContent = 
+        selected.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      document.getElementById('selectedDateSubtitle').textContent = date;
+
+      const foods = App.FoodManager.getByDate(date);
+      const totals = App.FoodManager.getDailyTotals(date);
+      const goals = App.GoalsManager.getAll();
+
+      let html = '';
+
+      if (foods.length === 0) {
+        html = `
+          <div class="empty-state">
+            <div class="empty-state-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h4 class="empty-state-title">No entries for this day</h4>
+            <p class="empty-state-description">You didn't log any food on this date.</p>
+            <a href="add-food.html" class="btn btn-primary btn-sm">Add Food</a>
+          </div>
+        `;
+      } else {
+        // Summary
+        html += `
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="text-align: center; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
+              <div class="font-bold text-lg" style="color: var(--primary);">${Math.round(totals.calories)}</div>
+              <div class="text-xs text-secondary">Calories</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
+              <div class="font-bold text-lg" style="color: #22c55e;">${Math.round(totals.protein)}g</div>
+              <div class="text-xs text-secondary">Protein</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
+              <div class="font-bold text-lg" style="color: #f59e0b;">${Math.round(totals.fat)}g</div>
+              <div class="text-xs text-secondary">Fat</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
+              <div class="font-bold text-lg" style="color: #3b82f6;">${Math.round(totals.carbs)}g</div>
+              <div class="text-xs text-secondary">Carbs</div>
+            </div>
+          </div>
+
+          <h4 style="font-weight: 600; margin-bottom: 0.75rem;">Food Entries</h4>
+        `;
+
+        // Food list
+        foods.forEach(food => {
+          html += `
+            <div class="food-entry" style="padding: 0.75rem 0;">
+              <div class="food-entry-icon" style="width: 40px; height: 40px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <div class="food-entry-info">
+                <div class="food-entry-name">${food.name}</div>
+                <div class="food-entry-details">${food.quantity} ${food.unit || 'serving'}</div>
+              </div>
+              <div class="food-entry-calories">${Math.round(food.calories)} cal</div>
+            </div>
+          `;
+        });
+
+        // Goal status
+        const goalMet = totals.calories <= goals.calories;
+        html += `
+          <div style="margin-top: 1.5rem; padding: 1rem; border-radius: var(--radius-md); ${goalMet ? 'background: rgba(34, 197, 94, 0.1);' : 'background: rgba(245, 158, 11, 0.1);'}">
+            <div style="display: flex; align-items: center; gap: 0.5rem; ${goalMet ? 'color: var(--success);' : 'color: var(--warning);'}">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                ${goalMet ? '<path d="M20 6L9 17l-5-5"/>' : '<circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>'}
+              </svg>
+              <span class="font-medium">${goalMet ? 'Daily goal met!' : 'Over daily goal'}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('dayDetails').innerHTML = html;
+    }
+
+    function loadMonthStats() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = today.getMonth();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      
+      const monthStart = `${year}-${String(month + 1).padStart(2, '0')}-01`;
+      const monthEnd = `${year}-${String(month + 1).padStart(2, '0')}-${daysInMonth}`;
+      
+      const foods = App.FoodManager.getByDateRange(monthStart, monthEnd);
+      
+      // Count entries
+      document.getElementById('monthEntries').textContent = foods.length;
+      
+      // Count unique days
+      const uniqueDays = new Set(foods.map(f => f.date)).size;
+      document.getElementById('loggedDays').textContent = uniqueDays;
+      
+      // Calculate average calories
+      const dailyCalories = {};
+      foods.forEach(food => {
+        if (!dailyCalories[food.date]) dailyCalories[food.date] = 0;
+        dailyCalories[food.date] += food.calories;
+      });
+      
+      const avgCalories = Object.values(dailyCalories).length > 0 
+        ? Math.round(Object.values(dailyCalories).reduce((a, b) => a + b, 0) / Object.values(dailyCalories).length)
+        : 0;
+      document.getElementById('monthCalories').textContent = avgCalories;
+      
+      // Count goal met days
+      const goals = App.GoalsManager.getAll();
+      const goalMetDays = Object.values(dailyCalories).filter(cal => cal <= goals.calories).length;
+      document.getElementById('monthGoals').textContent = goalMetDays;
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>

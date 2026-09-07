@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Plan - NutriTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span>NutriTrack</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="add-food.html" class="nav-link">Add Food</a>
+        <a href="logs.html" class="nav-link">Logs</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="exercise.html" class="nav-link active">Exercise</a>
+        <a href="habits.html" class="nav-link">Habits</a>
+        <a href="ai-coach.html" class="nav-link">AI Coach</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+
+      <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="dashboard.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+      Dashboard
+    </a>
+    <a href="add-food.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+      Add Food
+    </a>
+    <a href="logs.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      Logs
+    </a>
+    <a href="reports.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      Reports
+    </a>
+    <a href="calendar.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Calendar
+    </a>
+    <a href="exercise.html" class="mobile-nav-link active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M6 10h12M6 14h12M3 8a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+      Exercise
+    </a>
+    <a href="habits.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.2 17.6l-2.8-2.8a5 5 0 00-7-7L7.4 4.8a7 7 0 019.8 9.8l2.8 2.8a2 2 0 010 2.8 2 2 0 01-2.8 0zM9 11l3 3"/></svg>
+      Habits
+    </a>
+    <a href="meal-plan.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Meal Plan
+    </a>
+    <a href="grocery.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v2M15 2v2M12 2v8M8 10h8M7 14h.01M11 14h.01M15 14h.01M7 18h.01M11 18h.01M15 18h.01M3 10v10a2 2 0 002 2h14a2 2 0 002-2V10"/></svg>
+      Grocery
+    </a>
+    <a href="achievements.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+      Achievements
+    </a>
+    <a href="ai-coach.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>
+      AI Coach
+    </a>
+    <a href="profile.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+    <a href="settings.html" class="mobile-nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-6.36-9.64l4.24 4.24m5.66 5.66l4.24 4.24M1 12h6m6 0h6m-9.64 6.36l4.24-4.24m5.66-5.66l4.24-4.24"/></svg>
+      Settings
+    </a>
+    <a href="index.html" class="mobile-nav-link" onclick="App.UserManager.logout()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+      Logout
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-container">
+      <div class="mb-6">
+        <h1>Exercise Plan</h1>
+        <p class="text-secondary">Your 7-day workout schedule</p>
+      </div>
+
+      <!-- Weekly Progress -->
+      <div class="card mb-6">
+        <div class="card-body" style="display: flex; align-items: center; gap: 1.5rem;">
+          <div style="width: 80px; height: 80px; position: relative;">
+            <svg width="80" height="80" viewBox="0 0 100 100" style="transform: rotate(-90deg);">
+              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--bg-tertiary)" stroke-width="8"/>
+              <circle id="weeklyProgressCircle" cx="50" cy="50" r="45" fill="none" stroke="var(--primary)" stroke-width="8" 
+                stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round"
+                style="transition: stroke-dashoffset 0.5s ease;"/>
+            </svg>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+              <div class="font-bold" id="weeklyProgressText">0%</div>
+            </div>
+          </div>
+          <div>
+            <div class="font-semibold">Weekly Progress</div>
+            <div class="text-secondary text-sm" id="exercisesCompleted">0 of 21 exercises completed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day Tabs -->
+      <div class="search-bar" style="justify-content: flex-start; flex-wrap: wrap;">
+        <button class="btn btn-outline active" data-day="monday">Monday</button>
+        <button class="btn btn-outline" data-day="tuesday">Tuesday</button>
+        <button class="btn btn-outline" data-day="wednesday">Wednesday</button>
+        <button class="btn btn-outline" data-day="thursday">Thursday</button>
+        <button class="btn btn-outline" data-day="friday">Friday</button>
+        <button class="btn btn-outline" data-day="saturday">Saturday</button>
+        <button class="btn btn-outline" data-day="sunday">Sunday</button>
+      </div>
+
+      <!-- Exercise List -->
+      <div class="card" id="exerciseContainer">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title" id="dayTitle">Monday Workout</h3>
+            <p class="card-subtitle" id="dayProgress">0 of 3 exercises completed</p>
+          </div>
+          <button class="btn btn-ghost btn-sm" onclick="resetDay()">Reset Day</button>
+        </div>
+        <div class="card-body" id="exerciseList">
+          <!-- Exercises will be loaded here -->
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #86efac, #22c55e);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="summary-card-value" id="totalWorkouts">0</div>
+          <div class="summary-card-label">Workouts This Week</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #93c5fd, #3b82f6);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 8l-2.5-2.5a4.46 4.46 0 00-6.36 0l-2.6 2.6a4.46 4.46 0 000 6.36l2.5 2.5M12 8l5.5 5.5a4.46 4.46 0 010 6.36l-2.6 2.6a4.46 4.46 0 01-6.36 0L6 20"/><path d="M12 8V3m0 17v-5"/></svg>
+          </div>
+          <div class="summary-card-value" id="totalExercises">0</div>
+          <div class="summary-card-label">Exercises Completed</div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="summary-card-icon" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="summary-card-value" id="streakValue">0</div>
+          <div class="summary-card-label">Day Streak</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    let currentDay = 'monday';
+    const exercisePlan = App.EXERCISE_PLAN;
+
+    function initPage() {
+      setupDayTabs();
+      loadDay(currentDay);
+      updateWeeklyStats();
+    }
+
+    function setupDayTabs() {
+      document.querySelectorAll('[data-day]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('[data-day]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentDay = btn.dataset.day;
+          loadDay(currentDay);
+        });
+      });
+
+      // Set today's tab as active
+      const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
+      if (exercisePlan[today]) {
+        document.querySelectorAll('[data-day]').forEach(b => b.classList.remove('active'));
+        const todayBtn = document.querySelector(`[data-day="${today}"]`);
+        if (todayBtn) {
+          todayBtn.classList.add('active');
+          currentDay = today;
+        }
+      }
+    }
+
+    function loadDay(day) {
+      const exercises = exercisePlan[day];
+      const progress = App.ExerciseManager.getDayProgress(day);
+      
+      document.getElementById('dayTitle').textContent = `${day.charAt(0).toUpperCase() + day.slice(1)} Workout`;
+      document.getElementById('dayProgress').textContent = `${progress.completed} of ${progress.total} exercises completed`;
+
+      const container = document.getElementById('exerciseList');
+      let html = '';
+
+      exercises.forEach((exercise, index) => {
+        const isCompleted = App.ExerciseManager.isCompleted(day, index);
+        html += `
+          <div class="exercise-item ${isCompleted ? 'completed' : ''}">
+            <div class="exercise-checkbox ${isCompleted ? 'checked' : ''}" onclick="toggleExercise('${day}', ${index})">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <div class="exercise-info">
+              <div class="exercise-name">${exercise.name}</div>
+              <div class="exercise-details">${exercise.duration} · ${exercise.type}</div>
+            </div>
+            <span class="badge badge-${getTypeColor(exercise.type)}">${exercise.type}</span>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      updateWeeklyStats();
+    }
+
+    function getTypeColor(type) {
+      const colors = {
+        cardio: 'success',
+        strength: 'primary',
+        flexibility: 'warning',
+        core: 'secondary',
+        rest: 'danger'
+      };
+      return colors[type] || 'secondary';
+    }
+
+    function toggleExercise(day, index) {
+      App.ExerciseManager.toggleExercise(day, index);
+      loadDay(day);
+    }
+
+    function resetDay() {
+      if (confirm('Reset all exercises for this day?')) {
+        const exercises = exercisePlan[currentDay];
+        exercises.forEach((_, index) => {
+          const key = `${currentDay}-${index}`;
+          const exercises = App.Storage.get('exercises', {});
+          delete exercises[key];
+          App.Storage.set('exercises', exercises);
+        });
+        loadDay(currentDay);
+        App.Toast.success('Day reset successfully');
+      }
+    }
+
+    function updateWeeklyStats() {
+      let totalCompleted = 0;
+      let totalExercises = 0;
+      let completedWorkouts = 0;
+
+      Object.keys(exercisePlan).forEach(day => {
+        const progress = App.ExerciseManager.getDayProgress(day);
+        totalCompleted += progress.completed;
+        totalExercises += progress.total;
+        if (progress.completed === progress.total && progress.total > 0) {
+          completedWorkouts++;
+        }
+      });
+
+      const percentage = totalExercises > 0 ? (totalCompleted / totalExercises) * 100 : 0;
+      
+      document.getElementById('weeklyProgressText').textContent = `${Math.round(percentage)}%`;
+      document.getElementById('weeklyProgressCircle').style.strokeDashoffset = 283 - (283 * percentage / 100);
+      document.getElementById('exercisesCompleted').textContent = `${totalCompleted} of ${totalExercises} exercises completed`;
+      
+      document.getElementById('totalWorkouts').textContent = completedWorkouts;
+      document.getElementById('totalExercises').textContent = totalCompleted;
+      
+      const streaks = App.Storage.get('streaks', { current: 0 });
+      document.getElementById('streakValue').textContent = streaks.current;
+    }
+
+    document.addEventListener('DOMContentLoaded', initPage);
+  </script>
+</body>
+</html>
